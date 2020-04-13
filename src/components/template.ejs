@@ -17,7 +17,7 @@
         margin: 90px 110px;
       }
       .fontStyle {
-        font-size: 22px;
+        font-size: 12px;
         text-align: justify;
         font-family: Arial, Helvetica, sans-serif;
       }
@@ -42,9 +42,10 @@
       </div>
       <div class="margin">
         <p class="fontStyle">
-          Eu, <%= locals.nomeEleitor %>, com inscrição eleitoral n.º <%= locals.inscricaoEleitoral %>, venho, perante Vossa Excelência, requerer o CANCELAMENTO
-          de minha filiação do <%= locals.nomePartido %> (<%= locals.siglaPartido %>) de
-          <%= locals.municipio %>.
+          Eu, <%= locals.nomeEleitor %>, com inscrição eleitoral n.º <%=
+          locals.inscricaoEleitoral %>, venho, perante Vossa Excelência,
+          requerer o CANCELAMENTO de minha filiação do <%= locals.nomePartido %>
+          (<%= locals.siglaPartido %>) de <%= locals.municipio %>.
         </p>
         <p class="fontStyle removePadding">
           Por fim, encaminho, em apenso, comunicação de desfiliação já realizada
@@ -64,13 +65,15 @@
     <br />
     <div class="container2">
       <p class="fontStyle">
-        ILUSTRÍSSIMO SENHOR PRESIDENTE DO <%= locals.nomePartidoUpper %> DO MUNICÍPIO DE
-        <%= locals.municipioUpper %>/SC.
+        ILUSTRÍSSIMO SENHOR PRESIDENTE DO <%= locals.nomePartidoUpper %> DO
+        MUNICÍPIO DE <%= locals.municipioUpper %>/SC.
       </p>
       <div class="margin">
         <p class="fontStyle">
-          Eu, <%- locals.nomeEleitor %>, com inscrição eleitoral n.º <%= locals.inscricaoEleitoral %>, venho, perante Vossa Senhoria, requerer minha desfiliação
-          do <%= locals.nomePartido %> (<%= locals.siglaPartido %>) de <%= locals.municipio %>/SC.
+          Eu, <%- locals.nomeEleitor %>, com inscrição eleitoral n.º <%=
+          locals.inscricaoEleitoral %>, venho, perante Vossa Senhoria, requerer
+          minha desfiliação do <%= locals.nomePartido %> (<%=
+          locals.siglaPartido %>) de <%= locals.municipio %>/SC.
         </p>
       </div>
       <div class="margin">
