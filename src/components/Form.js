@@ -44,13 +44,16 @@ export default () => {
         minicipioUpper: municipio.value.toUpperCase(),
       };
       const time = new Date().valueOf();
-      const response = await axios.post(`http://localhost:3333/download`, {
-        data: { obj: obj, time: time },
-      });
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_URL}/download`,
+        {
+          data: { obj: obj, time: time },
+        }
+      );
 
       if (response.status === 200) {
         const responsePdf = await axios.get(
-          `http://localhost:3333/fetch-pdf?url=${time}`,
+          `${process.env.REACT_APP_API_URL}/fetch-pdf?url=${time}`,
           { responseType: 'blob' }
         );
 
