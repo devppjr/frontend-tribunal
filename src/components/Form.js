@@ -30,7 +30,6 @@ export default () => {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    console.log(municipio);
 
     if (isAllValidate()) {
       const obj = {
